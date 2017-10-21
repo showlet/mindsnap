@@ -1,13 +1,12 @@
 html {
    padding: 0;
    margin: 0;
-   background: #2e5cb8;
    font-family: Verdana, Helvetica, sans-serif;
 }
 body {
    padding: 0;
    margin: 0;
-   background: #2e5cb8;
+   background: linear-gradient(45deg, #348f50, #56b4d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    height: 100vh;
    text-align: center;
    color: rgb(224, 224, 224);
