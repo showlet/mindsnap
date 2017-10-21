@@ -1,20 +1,29 @@
 html {
    padding: 0;
    margin: 0;
-   background-color: #ffffff;
+   background: #2e5cb8;
    font-family: Verdana, Helvetica, sans-serif;
 }
 body {
    padding: 0;
    margin: 0;
+   background: #2e5cb8;
+   height: 100vh;
+   text-align: center;
+   color: rgb(224, 224, 224);
 }
 a {
    text-decoration: underline;
+   color: rgb(224, 224, 224);
 }
 a :hover {
    cursor: pointer;
    text-decoration: underline;
+   color: #c2d1f0;
 }
+a :active {
+   color: rgb(224, 224, 224);
+} 
 img {
    border: none;
 }
@@ -23,4 +32,5 @@ img {
 }
 #info {
    font-size: 60%;
+    margin: 0 auto;
 }

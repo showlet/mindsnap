@@ -1,0 +1,21 @@
+[21/Oct/2017:18:21:18 -0400] During processing of request from 127.0.0.1:38460
+request:
+"GET / HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38460 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+GHC error:
+
+unable to load package `skein-1.0.9.4'
+[21/Oct/2017:18:22:05 -0400] During processing of request from 127.0.0.1:38460
+request:
+"GET / HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38460 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+GHC error:
+
+unable to load package `skein-1.0.9.4'
+[21/Oct/2017:18:22:25 -0400] During processing of request from 127.0.0.1:38460
+request:
+"GET / HTTP/1.1\ncache-control: max-age=0\nupgrade-insecure-requests: 1\nconnection: keep-alive\naccept-encoding: gzip, deflate\naccept-language: en-US,en;q=0.5\naccept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\nuser-agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0\nhost: localhost:8000\n\nsn=\"localhost:8000\" c=127.0.0.1:38460 s=127.0.0.1:8000 ctx=/ clen=n/a"
+A web handler threw an exception. Details:
+GHC error:
+
+unable to load package `skein-1.0.9.4'
