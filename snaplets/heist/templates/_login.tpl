@@ -1,6 +1,5 @@
-<h2>Mindsnap login</h2>
+<h4>Log in</h4>
 <p><loginError/></p>
-
 <div class="loginform">
     <bind tag="postAction">/login</bind>
     <bind tag="submitText">Login</bind>

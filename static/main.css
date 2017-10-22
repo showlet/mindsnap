@@ -1,35 +1,69 @@
 html {
    padding: 0;
    margin: 0;
-   font-family: Verdana, Helvetica, sans-serif;
 }
 body {
    padding: 0;
    margin: 0;
+   font-family: 'Open Sans', sans-serif;
    background: linear-gradient(45deg, #348f50, #56b4d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-   height: 100vh;
+   height: 150vh;
    text-align: center;
    color: rgb(224, 224, 224);
 }
+input {
+    margin: 1em;
+    border-radius: 0.7em;
+    border: 0px;
+    padding: 0.6em;
+}
 a {
-   text-decoration: underline;
-   color: rgb(224, 224, 224);
+   text-decoration: none;
+   color: rgb(240, 240, 240);
 }
 a :hover {
    cursor: pointer;
-   text-decoration: underline;
-   color: #c2d1f0;
+   text-decoration: none;
+   color: rgb(255, 255, 255);
 }
 a :active {
    color: rgb(224, 224, 224);
 } 
+h2 {
+    margin: 0px;
+}
+h4 {
+    margin: 0px;
+}
 img {
    border: none;
 }
 #content {
-   padding-left: 1em;
+   padding-top: 5em;
 }
 #info {
-   font-size: 60%;
+   font-size: 12px;
     margin: 0 auto;
 }
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    padding: 0.4em;
+    display:flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(255,255,255,0.18));
+}
+.nav-title {
+    order: 0;
+}
+.nav-login {
+    order: 1;
+}
+.nav-newuser {
+    order: 2;
+}
+.nav-elem {
+    margin: 0.4em;
+}
+#header-wrap{ position:absolute;}
