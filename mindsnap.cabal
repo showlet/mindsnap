@@ -35,7 +35,9 @@ Executable mindsnap
     text                      >= 0.11,  
     time                      >= 1.1,   
     xmlhtml                   >= 0.1,
-    snaplet-postgresql-simple >= 0.3
+    snaplet-postgresql-simple >= 0.3,
+    snap-extras               >= 0.7,
+    aeson                     >= 0.6.0.0
 
   if flag(old-base)
     build-depends:
@@ -44,7 +46,7 @@ Executable mindsnap
   else
     build-depends:
       base                      >= 4.4      && < 5,
-      lens                      >= 3.7.6    && < 4.16
+      lens                      >= 3.7.6    && < 5
 
   if flag(development)
     build-depends:
