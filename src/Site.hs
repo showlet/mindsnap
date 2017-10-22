@@ -49,6 +49,9 @@ handleLoginSubmit =
 handleLogout :: Handler App (AuthManager App) ()
 handleLogout = logout >> redirect "/"
 
+------------------------------------------------------------------------------
+-- | Creates a new task
+-- handleNewTask :: Handler App (AuthManager)
 
 ------------------------------------------------------------------------------
 -- | Handle new user form submit

@@ -9,7 +9,7 @@ body {
    background: linear-gradient(45deg, #348f50, #56b4d3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    height: 150vh;
    text-align: center;
-   color: rgb(224, 224, 224);
+   color: rgb(244, 244, 244);
 }
 input {
     margin: 1em;
@@ -17,6 +17,9 @@ input {
     border: 0px;
     padding: 0.6em;
     box-shadow: 2px 2px 2px rgb(51, 51, 51);
+}
+input:focus {
+    outline:none;
 }
 a {
    text-decoration: none;
@@ -45,7 +48,6 @@ img {
 #info {
    font-size: 12px;
     margin: 0 auto;
-    display: flex;
 }
 .navbar {
     position: fixed;
@@ -78,13 +80,4 @@ img {
 }
 .submit-btn {
     background: #fff;
-}
-.submit-btn :click {
-    background: rgb(161, 161, 161);
-}
-.submit-btn :hover {
-    background: rgb(204, 204, 204);
-}
-.submit-btn :active {
-    background: rgb(161, 161, 161);
 }
