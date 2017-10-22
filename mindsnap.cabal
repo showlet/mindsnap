@@ -23,18 +23,19 @@ Executable mindsnap
   main-is: Main.hs
 
   Build-depends:
-    bytestring                >= 0.9.1   && < 0.11,
-    heist                     >= 1.0     && < 1.1,
-    map-syntax                >= 0.2     && < 0.3,
-    monad-control             >= 1.0     && < 1.1,
-    mtl                       >= 2       && < 3,
-    snap                      >= 1.0     && < 1.1,
-    snap-core                 >= 1.0     && < 1.1,
-    snap-server               >= 1.0     && < 1.1,
-    snap-loader-static        >= 1.0     && < 1.1,
-    text                      >= 0.11    && < 1.3,
-    time                      >= 1.1     && < 1.7,
-    xmlhtml                   >= 0.1
+    bytestring                >= 0.9.1, 
+    heist                     >= 1.0, 
+    map-syntax                >= 0.2,    
+    monad-control             >= 1.0,   
+    mtl                       >= 2,    
+    snap                      >= 1.0,    
+    snap-core                 >= 1.0,   
+    snap-server               >= 1.0,
+    snap-loader-static        >= 1.0,   
+    text                      >= 0.11,  
+    time                      >= 1.1,   
+    xmlhtml                   >= 0.1,
+    snaplet-postgresql-simple >= 0.3
 
   if flag(old-base)
     build-depends:
