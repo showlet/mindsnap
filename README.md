@@ -13,9 +13,8 @@ cabal sandbox init
 cabal install
 ```
 
+This creates the sandbox and the project binairies
 
-
-This should have created the sandbox and the project binairies\n
 To run the site
 ```SHELL
 .cabal-sandbox/bin/mindsnap -p 3001
