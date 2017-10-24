@@ -10,9 +10,11 @@ module Site
   ) where
 
 ------------------------------------------------------------------------------
+import           Control.Monad.Trans
 import           Control.Applicative
 import           Control.Monad.State.Class
-import           Data.ByteString (ByteString)
+import           Data.ByteString (ByteString) 
+import qualified Data.ByteString.Char8 as BS
 import           Data.Map.Syntax ((##))
 import qualified Data.Text as T
 import qualified Heist.Interpreted as I
@@ -24,6 +26,7 @@ import           Snap.Snaplet.Auth.Backends.JsonFile
 import           Snap.Snaplet.Auth.Backends.PostgresqlSimple
 import           Snap.Snaplet.Heist
 import           Snap.Snaplet.PostgresqlSimple
+import           System.Environment
 import           Snap.Snaplet.Session.Backends.CookieSession
 import           Snap.Util.FileServe
 ------------------------------------------------------------------------------
@@ -109,10 +112,11 @@ app = makeSnaplet "app" "mindsnap" Nothing $ do
     h <- nestSnaplet "" heist $ heistInit "templates"
     s <- nestSnaplet "sess" sess $
            initCookieSessionManager "site_key.txt" "sess" Nothing (Just 3600)
-    d <- nestSnaplet "db" db pgsInit
+    connStr <- BS.pack <$> liftIO (getEnv "DATABASE_URL")
+    d <- nestSnaplet "db" db $
+            pgsInit' (pgsDefaultConfig connStr)
     a <- nestSnaplet "auth" auth $
            initPostgresAuth sess d
     addRoutes routes
     addAuthSplices h auth
     return $ App h s d a
-
