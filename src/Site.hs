@@ -112,9 +112,9 @@ app = makeSnaplet "app" "mindsnap" Nothing $ do
     h <- nestSnaplet "" heist $ heistInit "templates"
     s <- nestSnaplet "sess" sess $
            initCookieSessionManager "site_key.txt" "sess" Nothing (Just 3600)
-    connStr <- BS.pack <$> liftIO (getEnv "DATABASE_URL")
+    connStr <- BS.pack <$> liftIO (getEnv "DATABASE_URL") -- gets the connection string for heroku
     d <- nestSnaplet "db" db $
-            pgsInit' (pgsDefaultConfig connStr)
+            pgsInit' (pgsDefaultConfig connStr) -- connects based on the connection string
     a <- nestSnaplet "auth" auth $
            initPostgresAuth sess d
     addRoutes routes
