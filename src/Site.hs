@@ -60,7 +60,7 @@ handleLogout :: Handler App (AuthManager App) ()
 handleLogout = logout >> redirect "/"
 
 ------------------------------------------------------------------------------
--- | sample postgres query
+-- | 
 getUsersFromPostgres :: Handler App (AuthManager App) ()
 getUsersFromPostgres = do
     results <- query_ "select * from snap_auth_user"

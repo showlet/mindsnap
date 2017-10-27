@@ -799,3 +799,8 @@
 127.0.0.1 - - [22/Oct/2017:13:31:54 -0400] "GET /getUsers HTTP/1.1" 200 758 - "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/58.0.3029.110 Chrome/58.0.3029.110 Safari/537.36"
 127.0.0.1 - - [24/Oct/2017:18:21:56 -0400] "GET / HTTP/1.1" 200 479 "http://localhost:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
 127.0.0.1 - - [24/Oct/2017:18:21:56 -0400] "GET /main.css HTTP/1.1" 304 0 "http://localhost:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+127.0.0.1 - - [27/Oct/2017:11:33:22 -0400] "GET / HTTP/1.1" 200 478 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+127.0.0.1 - - [27/Oct/2017:11:33:22 -0400] "GET /main.css HTTP/1.1" 304 0 "http://localhost:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+127.0.0.1 - - [27/Oct/2017:11:33:23 -0400] "GET /favicon.ico HTTP/1.1" 404 209 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+127.0.0.1 - - [27/Oct/2017:11:35:34 -0400] "GET / HTTP/1.1" 200 478 - "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"
+127.0.0.1 - - [27/Oct/2017:11:35:34 -0400] "GET /main.css HTTP/1.1" 200 647 "http://localhost:3001/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:56.0) Gecko/20100101 Firefox/56.0"

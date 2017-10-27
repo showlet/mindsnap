@@ -1,5 +1,5 @@
 <apply template="base">
-  <p>A team task management platform</p>
+  <p>A haskell blog made for fun</p>
   <p>This website is in construction</p>
 
   <ifLoggedIn>
