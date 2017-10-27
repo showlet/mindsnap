@@ -1,5 +1,5 @@
 # mindsnap
-A task management platform similar to trello, built for fun.
+A blog made in haskell, built for fun.
 
 https://mindsnap.herokuapp.com/
 
