@@ -1,16 +1,14 @@
 <apply template="base">
-  <p>A haskell blog made for fun</p>
-  <p>This website is in construction</p>
-
-  <ifLoggedIn>
-    <p>Hi <loggedInUser/></p>
-    <p>You could always <a href="/logout">logout</a></p>
-  </ifLoggedIn>
+  <apply template="_header" />
+  <apply template="_posts" />
 
       <ignore>
-      this is cool
         <ifLoggedOut>
         <apply template="_login"/>
       </ifLoggedOut>
+      <ifLoggedIn>
+        <p>Hi <loggedInUser/></p>
+        <p>You could always <a href="/logout">logout</a></p>
+      </ifLoggedIn>
     </ignore>
 </apply>

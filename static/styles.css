@@ -1,0 +1,57 @@
+/* mobile version */
+body {
+    background: #121316;
+    color: rgb(209, 209, 209);
+    font-family: "Open sans";
+    margin: 0px;
+}
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.navbar {
+    background: #121316;
+    display: inline-block;
+    position: fixed;
+    padding: 0.8em 0em 1em 0em;
+    border-bottom: 2px dashed rgb(212, 212, 212);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.header {
+    width: 100%;
+    margin-top: 0em;
+}
+.content {
+    margin: 0 auto;
+    padding-top: 4em;
+}
+.posts {
+    display: block;
+    margin-top: 40px;
+}
+.post {
+    text-align: left;
+}
+.post-line {
+    margin-top: 50px;
+    height: 2px;
+    background: linear-gradient(to right, transparent 50%, #121316 50%), linear-gradient(to right, #4776e6, #8e54e9);
+    background-size: 16px 2px, 100% 2px;
+}
+.post-title {
+    color: rgb(196, 28, 238);
+}
+.post-content {
+    color: rgb(228, 228, 228);
+}
+@media screen and (min-width: 720px) {
+    /* Desktop version */
+    .content {
+        width: 70vw;
+    }
+    .navbar {
+        width: 70vw;
+    }
+}
