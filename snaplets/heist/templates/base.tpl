@@ -2,6 +2,7 @@
   <head>
     <title>Mindsnap</title>
     <link rel="stylesheet" type="text/css" href="/styles.css"/>
+    <script src="/prefixfree.dynamic-dom.min.js"> </script>
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet"> 
   </head>
   <body>

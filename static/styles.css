@@ -27,6 +27,7 @@ body {
 .posts {
     display: block;
     margin-top: 40px;
+    padding-right: 5px;
 }
 .post {
     text-align: left;
