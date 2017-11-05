@@ -1,4 +1,5 @@
 <apply template="base">
+  <apply template="_nav" />
   <apply template="_header" />
   <apply template="_posts" />
 

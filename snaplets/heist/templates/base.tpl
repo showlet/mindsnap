@@ -6,7 +6,6 @@
   </head>
   <body>
   <div class="wrapper">
-      <apply template="_nav" />
     <div class="content">
       <apply-content/>
     </div>

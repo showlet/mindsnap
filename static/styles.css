@@ -1,31 +1,28 @@
 /* mobile version */
 body {
     background: #121316;
+    background-image: linear-gradient(45deg, rgb(18, 18, 22) 25%, rgb(31, 31, 44));
     color: rgb(209, 209, 209);
     font-family: "Open sans";
     margin: 0px;
+    overflow: hidden;
 }
 .wrapper {
     width: 100%;
     margin: 0 auto;
-}
-.navbar {
-    background: #121316;
-    display: inline-block;
-    position: fixed;
-    padding: 0.8em 0em 1em 0em;
-    border-bottom: 2px dashed rgb(212, 212, 212);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
+    overflow: hidden;
 }
 .header {
     width: 100%;
     margin-top: 0em;
 }
 .content {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
-    padding-top: 4em;
+    padding: 0.5em; 
+    padding-right: 20px;
 }
 .posts {
     display: block;
@@ -37,7 +34,7 @@ body {
 .post-line {
     margin-top: 50px;
     height: 2px;
-    background: linear-gradient(to right, transparent 50%, #121316 50%), linear-gradient(to right, #4776e6, #8e54e9);
+    background: linear-gradient(to right, transparent 70%, #191a1f 50%), linear-gradient(to right, #4776e6, #8e54e9);
     background-size: 16px 2px, 100% 2px;
 }
 .post-title {
@@ -48,7 +45,7 @@ body {
 }
 @media screen and (min-width: 720px) {
     /* Desktop version */
-    .content {
+    .wrapper {
         width: 70vw;
     }
     .navbar {
