@@ -1,7 +1,7 @@
 /* mobile version */
 body {
     background: #121316;
-    background-image: linear-gradient(45deg, rgb(30, 30, 69), rgb(10, 47, 74));
+    background-image: linear-gradient(45deg, rgb(30, 30, 69), rgb(16, 64, 99));
     color: rgb(209, 209, 209);
     font-family: "Open sans";
     margin: 0px;
@@ -30,10 +30,11 @@ body {
     padding-right: 5px;
 }
 .post {
+    margin-top: 1em;
+    padding-bottom: 1em;
     text-align: left;
 }
 .post-line {
-    margin-top: 50px;
     height: 2px;
     background: linear-gradient(to right, transparent 70%,  rgb(44, 44, 123) 50%), linear-gradient(to right, #4776e6, #8e54e9);
     box-shadow: 0px 0px 7px 1px rgb(44, 44, 123);
@@ -41,10 +42,40 @@ body {
 }
 .post-title {
     color: rgb(196, 28, 238);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.post-date {
+    margin-top: 0px;
+}
+.post-header {
+    padding-left: 1em;
 }
 .post-content {
     color: rgb(228, 228, 228);
+    padding: 1em;
+    background: #ffffff1a;
+    border-radius: 1em;
+    box-shadow: 3px 3px 4px #0003;
 }
+a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+a:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (min-width: 720px) {
     /* Desktop version */
     .wrapper {
